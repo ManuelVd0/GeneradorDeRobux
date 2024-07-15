@@ -1,0 +1,46 @@
+<html>
+</body>
+<h1>Elije cuantos robux quieres
+</h2><select name="Elije cuantos robux quieres">
+  <option value="Personalizada">Personalizada</option>
+  <option value="400">400</option>
+  <option value="800">800</option>
+  <option value="1200">1200</option>
+  <option value="4500">4500</option>
+  <option value="10000">10000</option>
+</select>
+<br>
+<label for="inputTexto">O ingresa tu cantidad deseada:</label>
+    <input type="text" id="inputTexto" name="comentario" />
+  </div>
+  <div>
+<br>
+<label for="titulo">Nombre de usuario:</label>
+    <input type="text" id="titulo" name="comentario" />
+</br>
+
+<div>
+</div>
+<button id="miBotonExistente">Generar</button>
+<div id="miBarraDeCarga"></div>
+<script>
+    function mostrarPalabra() {
+        const letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const numeros = '0123456789';
+        let palabra = '';
+        for (let i = 0; i < 8; i++) {
+            const letraAleatoria = letras[Math.floor(Math.random() * letras.length)];
+            const numeroAleatorio = numeros[Math.floor(Math.random() * numeros.length)];
+            palabra += letraAleatoria + numeroAleatorio;
+        }
+        alert(`Codigo generado: ${palabra}`);
+    }
+
+    // Asigna la función al botón existente
+    const miBotonExistente = document.getElementById('miBotonExistente');
+    miBotonExistente.addEventListener('click', mostrarPalabra);
+</script>
+
+ <div>
+  </div>
+</form>
